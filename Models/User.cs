@@ -1,23 +1,21 @@
-﻿using Newtonsoft.Json;
+﻿using System.Text.Json.Serialization;
 
 namespace UserTodoApi.Models
 {
     public class User
     {
-        [JsonProperty(PropertyName = "id")]
+        [JsonPropertyName("id")]
         public int Id { get; set; }
-        [JsonProperty(PropertyName = "name")]
+        [JsonPropertyName("name")]
         public string Name { get; set; }
-        [JsonProperty(PropertyName = "username")]
+        [JsonPropertyName("username")]
         public string Username { get; set; }
-        [JsonProperty(PropertyName = "email")]
+        [JsonPropertyName("email")]
         public string Email { get; set; }
-        //public Address address { get; set; }
-        [JsonProperty(PropertyName = "phone")]
+        [JsonPropertyName("phone")]
         public string Phone { get; set; }
-        [JsonProperty(PropertyName = "website")]
+        [JsonPropertyName("website")]
         public string Website { get; set; }
-        //public Company company { get; set; }
     }
 
     //public class Address
